@@ -27,3 +27,23 @@
 .posterLarge:hover {
   transform: scale(1.09);
 }
+
+.player {
+  position: relative;
+}
+
+.exit {
+  position: absolute;
+  left: 97%;
+  bottom: 90%;
+  background: transparent;
+  border: none;
+}
+
+.exitImg:hover {
+  transition: all 0.2s;
+}
+
+.exitImg {
+  width: 50px;
+}

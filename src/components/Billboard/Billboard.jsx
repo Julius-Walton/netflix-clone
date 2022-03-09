@@ -3,6 +3,7 @@ import axios from '../../api/axios';
 import requests from '../../api/requests';
 import YouTube from 'react-youtube';
 import styles from './Billboard.module.css';
+import close from './close.png';
 
 const Billboard = () => {
   const [movie, setMovie] = useState([]);
@@ -44,6 +45,9 @@ const Billboard = () => {
       });
   };
 
+  const handleClose = () => {
+    setTrailerURL('');
+  };
   const opts = {
     height: '390',
     width: '100%',
@@ -70,7 +74,14 @@ const Billboard = () => {
         </div>
         <div className={styles.fadeBottom} />
       </header>
-      {trailerURL && <YouTube videoId={trailerURL} opts={opts} />}
+      <div className={styles.player}>
+        {trailerURL && (
+          <button className={styles.exit} onClick={() => handleClose()}>
+            <img className={styles.exitImg} src={close} />
+          </button>
+        )}
+        {trailerURL && <YouTube videoId={trailerURL} opts={opts} />}
+      </div>
     </div>
   );
 };
