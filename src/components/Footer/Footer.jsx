@@ -1,11 +1,16 @@
 import React from 'react';
 
+import SocialLinks from '../SocialLinks';
+import FooterLinks from '../FooterLinks';
 import styles from './Footer.module.css';
 const Footer = () => {
     return (
-        <div className={styles.footer}>
-            Footer
-        </div>
+        <footer>
+            <div className={styles.socialLinks}>
+                <SocialLinks />
+            </div>
+            <FooterLinks />
+        </footer>
     );
 };
 
