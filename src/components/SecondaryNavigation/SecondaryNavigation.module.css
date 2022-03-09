@@ -1,0 +1,8 @@
+.secondaryNavigation {
+   display: flex;
+   align-items: center;
+}
+
+.navItem {
+    margin-left: 1.5rem;
+}
