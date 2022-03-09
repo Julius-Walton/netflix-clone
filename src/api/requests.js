@@ -11,5 +11,6 @@ const requests = {
   fetchRomanceMovies: `/discover/movie?api_key=${API_KEY}&with_genres=10749`,
   fetchDocumentaries: `/discover/movie?api_key=${API_KEY}&with_genres=99`,
   fetchTrailers: `https://youtube.googleapis.com/youtube/v3/search?key=${YOUTUBE}`,
+  baseURL: 'https://image.tmdb.org/t/p/original/',
 };
 export default requests;

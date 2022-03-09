@@ -28,12 +28,14 @@ const Billboard = () => {
   }
 
   const handleClick = movie => {
+    const name = movie.name ? movie.name : movie.title;
+
     axios
       .get(requests.fetchTrailers, {
         mode: 'cors',
         headers: { 'Content-Type': 'application/json' },
         params: {
-          q: `${movie.name} trailer`,
+          q: `${name} trailer`,
           maxResults: 1,
         },
       })
