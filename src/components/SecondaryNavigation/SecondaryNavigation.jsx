@@ -7,22 +7,22 @@ import UserMenu from '../UserMenu';
 import BillboardSettings from '../BillboardSettings';
 
 const SecondaryNavigation = () => {
-    return (
-        <div className={styles.secondaryNavigation}>
-            <div className={styles.navItem}>
-                <Search />        
-            </div>
-            <div className={styles.navItem}>
-                <Notifications />
-            </div>
-            <div className={styles.navItem}>
-                <UserMenu />
-            </div>
-            <div className={styles.navItem}>
-                <BillboardSettings /> 
-            </div>
-        </div>
-    )
-}
+  return (
+    <div className={styles.secondaryNavigation}>
+      <div className={styles.navItem}>
+        <Search />
+      </div>
+      <div className={styles.navItem}>
+        <Notifications />
+      </div>
+      <div className={styles.navItem}>
+        <UserMenu />
+      </div>
+      <div className={styles.navItem}>
+        <BillboardSettings />
+      </div>
+    </div>
+  );
+};
 
 export default SecondaryNavigation;

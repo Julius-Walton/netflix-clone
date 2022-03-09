@@ -1,8 +1,8 @@
-.socialLinks{
-    display: flex;
-    align-items: center;
+.socialLinks {
+  display: flex;
+  align-items: center;
 }
 
 .iconLink {
-    margin-right: 2rem;
+  margin-right: 2rem;
 }
